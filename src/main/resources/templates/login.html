@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Reddit project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div>
+  <h1>User login</h1>
+</div>
+
+<div>
+  <form th:action="@{/login}" th:method="post">
+    <label>Username: </label>
+    <input type="text" th:name="user">
+    <br>
+    <label>Password: </label>
+    <input type="password" th:name="password">
+    <br>
+    <button type="submit">Login</button>
+  </form>
+</div>
+</body>
+</html>

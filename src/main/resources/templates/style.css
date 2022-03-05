@@ -1,0 +1,35 @@
+.p{font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;}
+
+.topnav{
+
+    overflow:hidden;
+    float:right;
+    font-size: 30px;
+    text-align: center;
+    padding:20px;
+}
+
+.topnav a{
+    width:auto;
+    padding: 15px 30px;
+    margin:20px 40px;
+    color: rgb(204, 67, 67);
+    line-height: 400%;
+}
+.Logo{
+    margin: 50px 50px;
+
+}
+.hr{
+    border: 3px solid rgb(167, 144, 18);
+}
+.h1{
+    margin: 80px 120px;
+    text-align: center;
+}
+.uplogo{
+    float:right ;
+    margin:-450px 400px;
+
+}
