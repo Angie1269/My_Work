@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>Register - Reddit project</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Register - Reddit project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <h1>User register</h1>
 <form th:action="@{/signup}" th:object="${user}" th:method="post">
-  <label>Username</label>
-  <input type="text" th:field="*{username}">
-  <br>
-  <label>Password</label>
-  <input type="password" th:field="*{password}">
-  <button type="submit">Register</button>
+    <label>Username</label>
+    <input type="text" th:field="*{username}">
+    <br>
+    <label>Password</label>
+    <input type="password" th:field="*{password}">
+    <button type="submit">Register</button>
 </form>
 </body>
 </html>

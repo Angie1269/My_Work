@@ -13,11 +13,24 @@ public class ContactServiceImpl implements ContactService {
 
     @Autowired
     public ContactServiceImpl(ContactRepositorie contactRepositorie) {
+
         this.contactRepositorie = contactRepositorie;
     }
 
+
     @Override
-    public List<Contact> finAll() {
+    public List<Contact> getAllContact() {
         return contactRepositorie.findAll();
+    }
+
+    @Override
+    public void saveContact(Contact contact) {
+        contactRepositorie.save(contact);
+
+    }
+
+    @Override
+    public Contact getContactById(int id) {
+        return contactRepositorie.getById(id);
     }
 }

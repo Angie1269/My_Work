@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit new post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div>
+    <h1>Submit a new contact</h1>
+</div>
+
+<div>
+    <form action="/contact" method="post">
+        <label>Name: </label>
+        <input type="text" name="name" placeholder="Name...">
+        <br>
+        <label>Message: </label>
+        <input type="text" name="message" placeholder="Message...">
+        <br>
+        <button type="contact">Contact</button>
+    </form>
+</div>
+<div>
+    <h2 th:if="${failed} == true">I think you forgot something...</h2>
+    <p></p>
+</div>
+</body>
+</html>
+

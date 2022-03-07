@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -23,8 +24,10 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Contact> contact;
 
+
     public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
+
 }
